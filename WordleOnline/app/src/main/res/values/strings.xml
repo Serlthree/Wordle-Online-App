@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Wordle Online</string>
+    <string name="play_multiplayer">PLAY MULTIPLAYER</string>
+    <string name="profile">PROFILE</string>
+</resources>

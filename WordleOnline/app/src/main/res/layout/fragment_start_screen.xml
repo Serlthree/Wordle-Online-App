@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:paddingTop="40dp"
+    android:paddingBottom="40dp">
+
+    <!-- Wordle Tile Logo Row -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="8dp">
+
+        <!-- W tile - correct (green) -->
+        <TextView
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:text="W"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:background="@drawable/cell_present"
+            android:layout_marginEnd="4dp" />
+
+        <!-- O tile - present (yellow) -->
+        <TextView
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:text="O"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:background="@drawable/cell_present"
+            android:layout_marginEnd="4dp" />
+
+        <!-- R tile - absent (dark) -->
+        <TextView
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:text="R"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:background="@drawable/cell_absent"
+            android:layout_marginEnd="4dp" />
+
+        <!-- D tile - correct (green) -->
+        <TextView
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:text="D"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:background="@drawable/cell_correct"
+            android:layout_marginEnd="4dp" />
+
+        <!-- L tile - present (yellow) -->
+        <TextView
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:text="L"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:background="@drawable/cell_present"
+            android:layout_marginEnd="4dp" />
+
+        <!-- E tile - present (yellow) -->
+        <TextView
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:text="E"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:background="@drawable/cell_present" />
+
+    </LinearLayout>
+
+    <!-- App Subtitle -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ONLINE"
+        android:textColor="#818384"
+        android:textSize="13sp"
+        android:textStyle="bold"
+        android:letterSpacing="0.3"
+        android:layout_marginBottom="48dp" />
+
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/play_multiplayer"
+        android:textSize="20sp"
+        android:id="@+id/multiplayerButton"
+        android:layout_margin="8dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/profile"
+        android:textSize="20sp"
+        android:id="@+id/profileButton"
+        android:layout_margin="8dp" />
+
+</LinearLayout>

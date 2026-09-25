@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/startScreen">
+
+    <fragment
+        android:id="@+id/startScreen"
+        android:name="com.andrew.lu.wordleonline.StartScreenFragment"
+        android:label="StartScreen" >
+        <action
+            android:id="@+id/action_startScreen_to_lobby"
+            app:destination="@id/lobby" />
+        <action
+            android:id="@+id/action_startScreen_to_profile"
+            app:destination="@id/profile" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/lobby"
+        android:name="com.andrew.lu.wordleonline.LobbyFragment"
+        android:label="Lobby">
+        <action
+            android:id="@+id/action_lobby_to_gameBoard"
+            app:destination="@id/gameBoard" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/gameBoard"
+        android:name="com.andrew.lu.wordleonline.GameBoardFragment"
+        android:label="GameBoard" >
+        <!-- goes back to the start screen (navGraph) and clear history -->
+        <action
+            android:id="@+id/action_gameBoard_to_startScreen"
+            app:destination="@id/startScreen"
+            app:popUpTo="@id/nav_graph"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_gameBoard_to_opponentBoard"
+            app:destination="@id/opponentBoard" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/opponentBoard"
+        android:name="com.andrew.lu.wordleonline.OpponentBoardFragment"
+        android:label="OpponentBoard"/>
+
+    <fragment
+        android:id="@+id/profile"
+        android:name="com.andrew.lu.wordleonline.ProfileFragment"
+        android:label="Profile"/>
+
+
+</navigation>

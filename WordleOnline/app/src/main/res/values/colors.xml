@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="button_txt_primary">#FF6CA965</color>
+    <color name="button_txt_red">#FFF44336</color>
+    <color name="wordle_bg">#121213</color>
+    <color name="wordle_surface">#1A1A1B</color>
+    <color name="wordle_green">#FF6CA965</color>
+    <color name="wordle_yellow">#FFC8B653</color>
+    <color name="wordle_text_secondary">#FF787C7F</color>
+    <color name="wordle_divider">#3A3A3C</color>
+    <color name="dark_green">#6EBF70</color>
+    <color name="light_green">#CDE9CE</color>
+</resources>

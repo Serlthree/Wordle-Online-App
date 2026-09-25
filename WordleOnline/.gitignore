@@ -1,0 +1,45 @@
+# Built variants
+**/build/
+/captures
+
+# IDEs and Editors
+.idea/
+*.iml
+.DS_Store
+
+# Android Studio / IntelliJ
+/.idea/caches
+/.idea/libraries
+/.idea/modules.xml
+/.idea/workspace.xml
+/.idea/navEditor.xml
+/.idea/assetWizardSettings.xml
+*.iws
+*.ipr
+/out/
+
+# Gradle
+.gradle/
+/buildSrc/build/
+/gradlew
+/gradlew.bat
+/gradle/wrapper/gradle-wrapper.jar
+
+# Local configuration files (SENSITIVE)
+local.properties
+secrets.properties
+
+# Signing files
+*.jks
+*.keystore
+*.p12
+
+# Google Services
+google-services.json
+
+# External Native Build
+.externalNativeBuild/
+.cxx/
+
+# Kotlin
+.kotlin/

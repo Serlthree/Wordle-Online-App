@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:paddingHorizontal="20dp"
+    android:paddingTop="32dp"
+    android:paddingBottom="40dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <!-- ═══════════════════════════════════════════ -->
+    <!--  Header                                      -->
+    <!-- ═══════════════════════════════════════════ -->
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="STATISTICS"
+        android:textSize="18sp"
+        android:fontFamily="sans-serif-black"
+        android:letterSpacing="0.15"
+        android:gravity="center"
+        android:paddingBottom="24dp" />
+
+    <!-- ═══════════════════════════════════════════ -->
+    <!--  Top Stats Row  (Played · Win% · Streak · Avg Guesses) -->
+    <!-- ═══════════════════════════════════════════ -->
+    <LinearLayout
+        android:id="@+id/layout_top_stats"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:paddingBottom="28dp">
+
+        <!-- Games Played -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/tv_games_played"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="142"
+                android:textColor="@color/wordle_green"
+                android:textSize="32sp"
+                android:fontFamily="sans-serif-light" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Played"
+                android:textColor="@color/wordle_text_secondary"
+                android:textSize="12sp"
+                android:gravity="center" />
+        </LinearLayout>
+
+        <!-- Current Streak -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/tv_current_streak"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="11"
+                android:textColor="@color/wordle_green"
+                android:textSize="32sp"
+                android:fontFamily="sans-serif-light" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Current&#10;Streak"
+                android:textColor="@color/wordle_text_secondary"
+                android:textSize="12sp"
+                android:gravity="center" />
+        </LinearLayout>
+
+        <!-- Max Streak -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/tv_max_streak"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="34"
+                android:textColor="@color/wordle_green"
+                android:textSize="32sp"
+                android:fontFamily="sans-serif-light" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Max&#10;Streak"
+                android:textColor="@color/wordle_text_secondary"
+                android:textSize="12sp"
+                android:gravity="center" />
+        </LinearLayout>
+
+        <!-- Avg Guesses -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/tv_avg_guesses"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3.8"
+                android:textColor="@color/wordle_green"
+                android:textSize="32sp"
+                android:fontFamily="sans-serif-light" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Avg&#10;Guesses"
+                android:textColor="@color/wordle_text_secondary"
+                android:textSize="12sp"
+                android:gravity="center" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!-- Divider -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/wordle_divider"
+        android:layout_marginBottom="24dp" />
+
+    <!-- ═══════════════════════════════════════════ -->
+    <!--  Bottom Stats Row  (Win · Losses · Draws · Win Rate) -->
+    <!-- ═══════════════════════════════════════════ -->
+    <LinearLayout
+        android:id="@+id/layout_bottom_stats"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:paddingBottom="28dp">
+
+        <!-- Games Played -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/tv_wins"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="142"
+                android:textColor="@color/wordle_green"
+                android:textSize="32sp"
+                android:fontFamily="sans-serif-light" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Wins"
+                android:textColor="@color/wordle_text_secondary"
+                android:textSize="12sp"
+                android:gravity="center" />
+        </LinearLayout>
+
+        <!-- Current Streak -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/tv_losses"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="11"
+                android:textColor="@color/wordle_green"
+                android:textSize="32sp"
+                android:fontFamily="sans-serif-light" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Losses"
+                android:textColor="@color/wordle_text_secondary"
+                android:textSize="12sp"
+                android:gravity="center" />
+        </LinearLayout>
+
+        <!-- Max Streak -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/tvDraws"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="34"
+                android:textColor="@color/wordle_green"
+                android:textSize="32sp"
+                android:fontFamily="sans-serif-light" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Draws"
+                android:textColor="@color/wordle_text_secondary"
+                android:textSize="12sp"
+                android:gravity="center" />
+        </LinearLayout>
+
+        <!-- Avg Guesses -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/tv_win_rate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="50%"
+                android:textColor="@color/wordle_green"
+                android:textSize="32sp"
+                android:fontFamily="sans-serif-light" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Win Rate"
+                android:textColor="@color/wordle_text_secondary"
+                android:textSize="12sp"
+                android:gravity="center" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <!-- ═══════════════════════════════════════════ -->
+    <!--  Guess Distribution Bar Chart               -->
+    <!--                                             -->
+    <!--  Each row:  label | bar (fill + space) | n  -->
+    <!--  Set layout_weight on bar_fill_N in code.   -->
+    <!-- ═══════════════════════════════════════════ -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="GUESS DISTRIBUTION"
+        android:textSize="14sp"
+        android:fontFamily="sans-serif-black"
+        android:letterSpacing="0.10"
+        android:paddingBottom="12dp" />
+
+    <com.patrykandpatrick.vico.views.cartesian.CartesianChartView
+        android:id="@+id/chart_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:chartStyle="@style/ChartStyle"
+        />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <Button
+            android:id="@+id/homeBtn"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="HOME"
+            />
+
+        <Button
+            android:id="@+id/signOutBtn"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@color/button_txt_red"
+            android:text="SIGN OUT"
+            />
+
+        <Button
+            android:id="@+id/changeNameBtn"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="CHANGE NAME"
+            />
+    </LinearLayout>
+</LinearLayout>
